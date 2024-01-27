@@ -23,6 +23,9 @@ def read_weights(weights_str):
 def read_impacts(impacts_str):
     try:
         impacts = np.array(list(impacts_str))
+        # if not all(impact in ['+', '-'] for impact in impacts):
+        #     print("Error: Impacts must be either +ve or -ve.")
+        #     sys.exit(1)
         return impacts
     except Exception as e:
         print(f"Error parsing impacts: {e}")
@@ -63,6 +66,10 @@ def main():
         print("Error: Columns from 2nd to last must contain numeric values only.")
         sys.exit(1)
     weights = read_weights(weights)
+    impacts_list = impacts.split(',')
+    if not all(impact in ['+', '-'] for impact in impacts_list):
+        print("Error: Impacts must be either +ve or -ve.")
+        sys.exit(1)
     impacts = read_impacts(impacts)
 
     topsis_score = calculate_topsis_score(dataset, weights, impacts)
