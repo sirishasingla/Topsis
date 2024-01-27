@@ -24,8 +24,8 @@ setup(
         "Programming Language :: Python :: 3.7",
         "Programming Language :: Python :: 3.8",
     ],
-    #packages=find_packages(),
-    packages=["Topsis"],
+    packages=find_packages(),
+    #packages=["Topsis"],
     include_package_data=True,
     install_requires=[
         "numpy",
