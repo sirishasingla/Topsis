@@ -10,7 +10,7 @@ README = (HERE / "README.md").read_text()
 # This call to setup() does all the work
 setup(
     name="Topsis-Sirisha-102103715",
-    version="1.1.2",
+    version="1.0.0",
     description="TOPSIS implementation by Sirisha Singla",
     long_description=README,
     long_description_content_type="text/markdown",
