@@ -4,6 +4,9 @@ Made by Sirisha Singla (Roll Number - 102103715)
 ## Inroduction
 Topsis is a Python package that provides an implementation of the Technique for Order of Preference by Similarity to Ideal Solution (TOPSIS) method. TOPSIS is a multi-criteria decision-making method that helps in selecting the best alternative from a set of alternatives based on their proximity to the ideal solution.
 
+## Installation
+pip install Topsis-Sirisha-102103715  
+
 ## Usage 
 Type the following command to run the package    
 
